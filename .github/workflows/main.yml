@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to print the version
+    steps:
+      - name: test action
+        id: get-version
+        uses: octocat/hello-world-javascript-action@v1.1
+        with:
+          path: .
+      - name: Print the version
+        run: echo "The version was ${{ steps.get-version.outputs.version }}"
