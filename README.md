@@ -17,7 +17,20 @@ The version in your `package.json`
 ## Example Usage
 
 ```yaml
-uses: beaconbrigade/package-json-version@v0.1
-with:
-  path: 'path/to/node/project'
+on: [push]
+
+jobs:
+  print-version:
+    runs-on: ubuntu-latest
+    name: A job to print the version
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v3
+      - name: test action
+        id: get-version
+        uses: beaconbrigade/package-json-version@v0.2
+        with:
+          path: .
+      - name: Print the version
+        run: echo "The version was ${{ steps.get-version.outputs.version }}"
 ```
