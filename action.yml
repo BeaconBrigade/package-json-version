@@ -1,5 +1,9 @@
 name: 'get-package-json-version'
 description: 'get the version in your pacakge.json file'
+author: beaconbrigade
+branding:
+  icon: activity
+  color: gray-dark
 inputs:
   path:  # id of input
     description: 'Path to find package.json'
