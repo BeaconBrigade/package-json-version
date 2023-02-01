@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: test action
         id: get-version
-        uses: beaconbrigade/package-json-version
+        uses: beaconbrigade/package-json-version@v0.1
         with:
           path: .
       - name: Print the version
