@@ -1,0 +1,24 @@
+{
+  "name": "package-json-version",
+  "version": "0.1.0",
+  "description": "Get version number in your package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeaconBrigade/package-json-version.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BeaconBrigade/package-json-version/issues"
+  },
+  "homepage": "https://github.com/BeaconBrigade/package-json-version#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
+  }
+}
