@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/BeaconBrigade/package-json-version.git"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
