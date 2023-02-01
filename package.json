@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "Get version number in your package.json",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
