@@ -10,4 +10,4 @@ outputs:
     description: 'The version in package.json'
 runs:
   using: 'node16'
-  main: 'index.mjs'
+  main: 'index.js'

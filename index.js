@@ -1,6 +1,6 @@
-import fs from 'fs';
-import { join } from 'path';
-import { getInput, setOutput, setFailed } from '@actions/core';
+const fs = require('fs');
+const join = require('path').join;
+const core = require('@actions/core');
 
 
 function getPackageJson(path) {
@@ -9,15 +9,15 @@ function getPackageJson(path) {
 
 function main() {
     try {
-        const path = getInput('path');
+        const path = core.getInput('path');
         console.log(`Reading ${join(path, 'package.json')}!`);
 
         const pkg = JSON.parse(getPackageJson(path));
 
         console.log(`The version is ${pkg.version}`)
-        setOutput("version", pkg.version);
+        core.setOutput("version", pkg.version);
     } catch (error) {
-        setFailed(error.message);
+        core.setFailed(error.message);
     }
 }
 
