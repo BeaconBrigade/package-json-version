@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: test action
         id: get-version
-        uses: octocat/hello-world-javascript-action@v1.1
+        uses: beaconbrigade/package-json-version
         with:
           path: .
       - name: Print the version
