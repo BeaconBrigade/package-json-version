@@ -28,7 +28,7 @@ jobs:
         uses: actions/checkout@v3
       - name: test action
         id: get-version
-        uses: beaconbrigade/package-json-version@v0.3
+        uses: beaconbrigade/package-json-version@v0.3.1
         with:
           path: .
       - name: Print the version
